@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.229)), url(bg.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    gap: 20px;
+    justify-content: space-between;
+}
+/* .nav-img{
+    height: 40px;
+    width: 75px;
+} */
+.web-name::after{
+    content: 'Zone';
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+.web-name::before{
+    content: 'Coder';
+    color: #ff0055;
+    font-size: 22px;
+    font-weight: 500;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+li{
+    list-style: none;
+    /* position: relative; */
+}
+li a{
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+    /* padding: 0px  10px 0 10px; */
+    display: block;
+    font-size: 20px;
+    position: relative;
+}
+li a:after{
+    content: "";
+    background-color: #ff0055;
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    /* border-radius: 50px; */
+}
+li a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+li a:hover:after{
+    width: 100%;
+}
+.search{
+    padding: 12px 0px 12px 24px;
+    border-radius: 50px;
+    border: none;
+}
+.text-button{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(209, 210, 210);
+    padding-top: 26vh;
+}
+h1{
+    font-size: 80px;
+    margin-bottom: 0;
+    /* color: #ff0055; */
+}
+h2{
+    font-size: 35px;
+    margin-top: 0;
+}
+p{
+    font-size: 14px;
+    margin: 20px 0;
+    color: #c9c9c9;
+}
+.btn{
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff0055;
+    color: aliceblue;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* main work css */ /* main work css */ /* main work css */
+/* main work css */ /* main work css */ /* main work css */
+
+.container{
+    text-align: center;
+    margin: 200px 400px;
+    
+}
+.main-text{
+    font-size: 40px;
+}
+.main-para{
+    padding: 0 0 25px 0;
+    color: #666666;
+}
+.language{
+    padding: 20px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #242424;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+.border-language{
+    background-color: #ffeaf1;
+    color: #ff0055;
+    border-radius: 8px;
+    border: 2.6px solid #ff0055;
+    cursor: pointer;
+}
+.other-skills{
+    color: #666666;
+    font-size: 15px;
+    display: inline-block;
+    margin: 60px 0 0 0;
+}
+hr{
+    margin: 10px 0 30px 0;
+}
+
+
+
+
+.container-2{
+    text-align: center;
+    margin-bottom: 0 200px;
+}
+
+
+.course-plan{
+    margin: 0 200px 200px 200px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.img{
+    height: 60px;
+    width: 50px;
+}
+.course{
+    width: 30%;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    transition: .8s;
+}
+.course:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 1px #666666;
+}
+.border-c{
+    border: 2px solid #ff0055;
+    background-color: #ffeaf1;
+}
+.course-para{
+    color: #666666;
+    font-size: 16px;
+}
+
+
+.about-header{
+    text-align: center;
+    font-size: 40px;
+    padding: 0 0 25px 0;
+}
+
+.about-para{
+    color: #666666;
+    text-align: center;
+}
+
+.aboutMe{
+    display: flex;
+    margin:30px 200px 200px 200px;
+    /* align-items: center; */
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    gap: 10px;
+    padding: 100px 40px;
+    border-radius: 8px;
+
+}
+.about-child{
+    width: 50%;
+}
+.pp{
+    height: 500px;
+    width: 500px;
+    float: right;
+}
+.about-main-para{
+    margin: 0;
+    color: #676767;
+    text-align: center;
+}
+.about-para{
+    margin: 0;
+    color: #676767;
+    text-align: justify;
+}
+
+
+.container-up{
+    margin: 0 400px 0 400px;
+    text-align: center;
+}
+.email-section{
+    display: inline-block;
+    margin: 0 400px 200px 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 246, 255);
+    padding: 100px 330px;
+}
+.email{
+    padding: 19px 50px;
+    background-color: #ffffff;
+    border: none;
+    margin: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.btn-subscribe{
+    padding: 15px 30px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    background-color: #ff0055;
+    color: aliceblue;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.btn0{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-home{
+    border: none;
+    background-color: #cdcdcd;
+    border-radius: 8px;
+    transition: .4s ease-in-out;
+
+}
+.btn-home:hover{
+    background-color: #ff0055;
+}
+.btn-home a{
+    color: #121212;
+    padding: 15px 40px;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    transition: .3s;
+}
+.btn-home a:hover{
+    color: #f2f2f2;
+}
+
+
+
+/* <!-- footer work -->  <!-- footer work -->  <!-- footer work -->
+<!-- footer work -->  <!-- footer work -->  <!-- footer work --> */
+footer{
+    background-color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+.header-footer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: #ff0055;
+    font-size: 35px;
+    padding-bottom: 0;
+}
+.para-footer{
+   
+    margin-bottom: 0;
+    margin-top: 10px;
+}
