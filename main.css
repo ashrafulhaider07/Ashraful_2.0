@@ -16,20 +16,23 @@ nav{
     padding: 5px 30px;
     gap: 20px;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
 }
 /* .nav-img{
     height: 40px;
     width: 75px;
 } */
-.web-name::after{
-    content: 'Zone';
-    color: white;
+.web-name::before{
+    content: 'A';
+    color: #ff0055;
     font-size: 22px;
     font-weight: 500;
 }
-.web-name::before{
-    content: 'Coder';
-    color: #ff0055;
+.web-name::after{
+    content: 'shraful';
+    color: white;
     font-size: 22px;
     font-weight: 500;
 }
@@ -79,7 +82,7 @@ li a:hover:after{
     justify-content: center;
     align-items: center;
     color: rgb(209, 210, 210);
-    padding-top: 26vh;
+    padding-top: 34vh;
 }
 h1{
     font-size: 80px;
@@ -103,6 +106,15 @@ p{
     color: aliceblue;
     font-size: 18px;
     cursor: pointer;
+    transition: all .2s ease;
+}
+.btn a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.btn:active{
+    scale: .8;
 }
 
 /* main work css */ /* main work css */ /* main work css */
@@ -169,11 +181,12 @@ hr{
     padding: 30px;
     border-radius: 8px;
     background-color: #f5f5f5;
+    cursor: pointer;
     transition: .8s;
 }
 .course:hover{
     transform: scale(1.2);
-    box-shadow: 1px 1px 1px #666666;
+    box-shadow: 1px 1px 10px #3eb5ff;
 }
 .border-c{
     border: 2px solid #ff0055;
@@ -256,7 +269,7 @@ hr{
     color: aliceblue;
     font-size: 18px;
     cursor: pointer;
-    margin: 0;
+    margin-left: -8px;
 }
 
 .btn0{
@@ -307,4 +320,41 @@ footer{
    
     margin-bottom: 0;
     margin-top: 10px;
+}
+
+
+
+
+.loader01{
+    display: flex;
+    justify-content: center;
+}
+
+
+.loader{
+    height: 40px;
+    width: 40px;
+    /* background: #ff0055; */
+    border-radius: 50%;
+    border: 5px solid #ffcdde;
+    border-top-color: #ff0055;
+    animation: rotate 1s infinite;
+    margin-bottom: 10px;
+
+}
+
+@keyframes rotate{
+    100%{rotate: 360deg;}
+}
+
+
+
+
+
+body::-webkit-scrollbar{
+    background-color: #ebebeb;
+}
+body::-webkit-scrollbar-thumb{
+    background: #ff0055;
+    border-radius: 4px;
 }
